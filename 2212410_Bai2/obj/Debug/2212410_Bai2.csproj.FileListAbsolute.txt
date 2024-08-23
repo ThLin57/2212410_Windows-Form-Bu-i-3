@@ -1,0 +1,10 @@
+C:\Users\LUAN\source\repos\2212410_Bai2\bin\Debug\2212410_Bai2.exe.config
+C:\Users\LUAN\source\repos\2212410_Bai2\bin\Debug\2212410_Bai2.exe
+C:\Users\LUAN\source\repos\2212410_Bai2\bin\Debug\2212410_Bai2.pdb
+C:\Users\LUAN\source\repos\2212410_Bai2\obj\Debug\2212410_Bai2.csproj.AssemblyReference.cache
+C:\Users\LUAN\source\repos\2212410_Bai2\obj\Debug\_2212410_Bai2.MainForm.resources
+C:\Users\LUAN\source\repos\2212410_Bai2\obj\Debug\_2212410_Bai2.Properties.Resources.resources
+C:\Users\LUAN\source\repos\2212410_Bai2\obj\Debug\2212410_Bai2.csproj.GenerateResource.cache
+C:\Users\LUAN\source\repos\2212410_Bai2\obj\Debug\2212410_Bai2.csproj.CoreCompileInputs.cache
+C:\Users\LUAN\source\repos\2212410_Bai2\obj\Debug\2212410_Bai2.exe
+C:\Users\LUAN\source\repos\2212410_Bai2\obj\Debug\2212410_Bai2.pdb
