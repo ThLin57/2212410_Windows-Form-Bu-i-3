@@ -28,5 +28,11 @@ namespace _2212410_BT2
             var form = new frmBai2();
             form.ShowDialog();
         }
+
+        private void bài3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new frBai3();
+            form.ShowDialog();
+        }
     }
 }

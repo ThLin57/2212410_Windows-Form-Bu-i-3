@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frBai3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frBai3.Designer.cs">
+      <DependentUpon>frBai3.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frBai3.resx">
+      <DependentUpon>frBai3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrChinh.resx">
       <DependentUpon>FrChinh.cs</DependentUpon>
     </EmbeddedResource>

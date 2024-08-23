@@ -43,17 +43,16 @@ namespace _2212410_BT2
                     case "Bàn Phím":
                         soTien += 100000;
                         break;
-                    case "Máy In" +
-                    "":
+                    case "Máy In":
                         soTien += 130000;
                         break;
-                    case "USB King max":
+                    case "USB Kingmax":
                         soTien += 140000;
                         break;
                     default:    
                         break;
-
                 }
+                lbSoTien.Text = soTien.ToString();
             }
         }
     }

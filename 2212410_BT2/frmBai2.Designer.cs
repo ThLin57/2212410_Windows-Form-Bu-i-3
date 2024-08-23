@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lsbDanhSachHH = new System.Windows.Forms.ListBox();
             this.a = new System.Windows.Forms.Button();
+            this.lsbDanhSachHH = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbSoTien = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.lsbDSHangBo = new System.Windows.Forms.ListBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -54,14 +54,15 @@
             this.panel1.Size = new System.Drawing.Size(344, 363);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // a
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Danh sách hàng hóa";
+            this.a.Location = new System.Drawing.Point(216, 142);
+            this.a.Name = "a";
+            this.a.Size = new System.Drawing.Size(109, 38);
+            this.a.TabIndex = 2;
+            this.a.Text = "Chọn hàng >>";
+            this.a.UseVisualStyleBackColor = true;
+            this.a.Click += new System.EventHandler(this.a_Click);
             // 
             // lsbDanhSachHH
             // 
@@ -77,20 +78,19 @@
             this.lsbDanhSachHH.Size = new System.Drawing.Size(166, 180);
             this.lsbDanhSachHH.TabIndex = 1;
             // 
-            // a
+            // label1
             // 
-            this.a.Location = new System.Drawing.Point(216, 142);
-            this.a.Name = "a";
-            this.a.Size = new System.Drawing.Size(109, 38);
-            this.a.TabIndex = 2;
-            this.a.Text = "Chọn hàng >>";
-            this.a.UseVisualStyleBackColor = true;
-            this.a.Click += new System.EventHandler(this.a_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Danh sách hàng hóa";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.lbSoTien);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
@@ -100,6 +100,46 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(344, 363);
             this.panel2.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(293, 327);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 16);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Đồng";
+            // 
+            // lbSoTien
+            // 
+            this.lbSoTien.AutoSize = true;
+            this.lbSoTien.Location = new System.Drawing.Point(180, 327);
+            this.lbSoTien.Name = "lbSoTien";
+            this.lbSoTien.Size = new System.Drawing.Size(14, 16);
+            this.lbSoTien.TabIndex = 5;
+            this.lbSoTien.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 327);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(152, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Tổng tiền cần thanh toán";
+            // 
+            // button2
+            // 
+            this.button2.Image = global::_2212410_BT2.Properties.Resources.expense;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(210, 250);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(107, 38);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Tính tiền";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -129,46 +169,6 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Các mặt hàng mà khách đã mua";
             // 
-            // button2
-            // 
-            this.button2.Image = global::_2212410_BT2.Properties.Resources.expense;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(210, 250);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 38);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Tính tiền";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 327);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Tổng tiền cần thanh toán";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(180, 327);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 16);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "0";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(293, 327);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(39, 16);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Đồng";
-            // 
             // frmBai2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -197,7 +197,7 @@
         private System.Windows.Forms.ListBox lsbDanhSachHH;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbSoTien;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
     }
